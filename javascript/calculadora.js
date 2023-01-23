@@ -1,6 +1,5 @@
 let finalizarOperacion = false;
 let defaultValue = false;
-
 let numberOne = null;
 let numberTwo = null;
 
@@ -25,25 +24,25 @@ else {
                     finalizarOperacion = true;
                     resultado = sumar(numberOne,numberTwo);
 
-                    alert("El resultado es: "+resultado);
+                    alert("El resultado de la operación es: "+resultado);
                     break;
                 case 2:
                     finalizarOperacion = true;
                     resultado = restar(numberOne,numberTwo);
 
-                    alert("El resultado es: "+resultado);
+                    alert("El resultado de la operación es: "+resultado);
                     break;
                 case 3:
                     finalizarOperacion = true;
                     resultado = multiplicar(numberOne,numberTwo);
                     
-                    alert("El resultado es: "+resultado);
+                    alert("El resultado de la operación es: "+resultado);
                     break;
                 case 4:
                     finalizarOperacion = true;
                     resultado = dividir(numberOne,numberTwo);
 
-                    alert("El resultado es: "+resultado);
+                    alert("El resultado de la operación es: "+resultado);
                     break;
                 case 5:
                     finalizarOperacion = true;
@@ -59,7 +58,7 @@ else {
 }
 
 function seleccionarOperacion() {
-    let operacionSeleccionada = parseInt(
+    let operacionSeleccionada = Number(
         prompt(
           "Ingrese que operación desea realizar:\n" +
             "1 Sumar\n" +
