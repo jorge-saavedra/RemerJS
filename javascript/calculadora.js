@@ -4,16 +4,8 @@ let defaultValue = false;
 let numberOne = null;
 let numberTwo = null;
 
-let operacionesMatematicas = Number(
-  prompt(
-    "Ingrese que operación desea realizar:\n" +
-      "1 Sumar\n" +
-      "2 Restar\n" +
-      "3 Multiplicar\n" +
-      "4 Dividir\n" +
-      "5 finalizarOperacion\n"
-  )
-);
+let operacionesMatematicas = seleccionarOperacion();
+
 if(operacionesMatematicas == 0){
     alert("Ha cancelado la operacion");
 }
@@ -23,45 +15,39 @@ else {
             alert("Por favor ingrese un numero");
         }
         else {
+            if(operacionesMatematicas < 5 ) {
+                numberOne = parameterOne();
+                numberTwo = parameterTwo();
+            }
             switch (operacionesMatematicas) {
+                
                 case 1:
-                    numberOne = parameterOne();
-                    numberTwo = parameterTwo();
-
-                    resultado = sumar(numberOne,numberTwo);
-                    alert("El resultado es: "+resultado);
-
                     finalizarOperacion = true;
+                    resultado = sumar(numberOne,numberTwo);
+
+                    alert("El resultado es: "+resultado);
                     break;
                 case 2:
-                    numberOne = parameterOne();
-                    numberTwo = parameterTwo();
-
-                    resultado = restar(numberOne,numberTwo);
-                    alert("El resultado es: "+resultado);
-
                     finalizarOperacion = true;
+                    resultado = restar(numberOne,numberTwo);
+
+                    alert("El resultado es: "+resultado);
                     break;
                 case 3:
-                    numberOne = parameterOne();
-                    numberTwo = parameterTwo();
-
-                    resultado = multiplicar(numberOne,numberTwo);
-                    alert("El resultado es: "+resultado);
-
                     finalizarOperacion = true;
+                    resultado = multiplicar(numberOne,numberTwo);
+                    
+                    alert("El resultado es: "+resultado);
                     break;
                 case 4:
-                    numberOne = parameterOne();
-                    numberTwo = parameterTwo();
-                    
-                    resultado = dividir(numberOne,numberTwo);
-                    alert("El resultado es: "+resultado);
-                   
                     finalizarOperacion = true;
+                    resultado = dividir(numberOne,numberTwo);
+
+                    alert("El resultado es: "+resultado);
                     break;
                 case 5:
                     finalizarOperacion = true;
+
                     alert("Gracias por utilizar nuestra plataforma, hasta luego!");
                     break;
                 default:
@@ -70,6 +56,20 @@ else {
             }
         }
     }
+}
+
+function seleccionarOperacion() {
+    let operacionSeleccionada = parseInt(
+        prompt(
+          "Ingrese que operación desea realizar:\n" +
+            "1 Sumar\n" +
+            "2 Restar\n" +
+            "3 Multiplicar\n" +
+            "4 Dividir\n" +
+            "5 finalizarOperacion\n"
+        )
+      );
+    return operacionSeleccionada;
 }
 
 function parameterOne() {
