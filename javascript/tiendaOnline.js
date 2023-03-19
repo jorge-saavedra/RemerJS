@@ -209,96 +209,13 @@ const filtrarBusqueda = (e) => {
 let btnFiltrar = document.getElementById("filterButton");
 btnFiltrar.addEventListener("click", filtrarBusqueda);
 
-//      contantes con los valores a mostrar
-const productos = [
-    {
-        id: 0,
-        prenda: "remera",
-        descripcion: "eastwood-inc-amarilla",
-        precio: 2100,
-        img: "./assets/img/eastwood-inc-amarilla.jpg",
-    },
-    {
-        id: 1,
-        prenda: "remera",
-        descripcion: "i-wanna-be-blackandwhite",
-        precio: 3390,
-        img: "./assets/img/i-wanna-be-blackandwhite.jpg",
-    },
-    {
-        id: 2,
-        prenda: "remera",
-        descripcion: "mockup-kit-azul-marino",
-        precio: 4395,
-        img: "./assets/img/mockup-kit-azul-marino.jpg",
-    },
-    {
-        id: 3,
-        prenda: "remera",
-        descripcion: "opend-your-mind-blackandwhite",
-        precio: 3485,
-        img: "./assets/img/opend-your-mind-blackandwhite.jpg",
-    },
-    {
-        id: 4,
-        prenda: "remera",
-        descripcion: "remeras-lisas",
-        precio: 3390,
-        img: "./assets/img/remeras-lisas.jpg",
-    },
-    {
-        id: 5,
-        prenda: "remera",
-        descripcion: "short-scleeve-violeta",
-        precio: 2185,
-        img: "./assets/img/short-scleeve-violeta.jpg",
-    },
-    {
-        id: 6,
-        prenda: "remera",
-        descripcion: "sunshine-white",
-        precio: 2385,
-        img: "./assets/img/sunshine-white.jpg",
-    },
-    {
-        id: 7,
-        prenda: "remera",
-        descripcion: "tri-blen-crew-negra",
-        precio: 5185,
-        img: "./assets/img/tri-blen-crew-negra.jpg",
-    },
-    {
-        id: 8,
-        prenda: "pantalon",
-        descripcion: "tri-crew-negra",
-        precio: 8785,
-        img: "./assets/img/pexels-prayoon-sajeev-2897521.jpg",
-    },
-    {
-        id: 9,
-        prenda: "pantalon",
-        descripcion: "blen-crew-negra",
-        precio: 7785,
-        img: "./assets/img/pexels-ivan-samkov-5947545.jpg",
-    },
-    {
-        id: 10,
-        prenda: "pantalon",
-        descripcion: "tri-blen-crew-blancl",
-        precio: 9085,
-        img: "./assets/img/pexels-godisable-jacob-3689127.jpg",
-    },
-    {
-        id: 11,
-        prenda: "pantalon",
-        descripcion: "tri-blen-crew",
-        precio: 6985,
-        img: "./assets/img/pexels-ron-lach-10341113.jpg",
-    },
-];
+//      funcion fetch para obtener los valores del json a mostrar en la vista
+let productos = fetch('./json/productos.json').then(response => 
+    response.json()).then(data => {
+        viewProductsInHTML(data);
+});
 
 //       Invocación de funciones ---
-viewProductsInHTML(productos);
 
 //       Consulta al Storage para saber si hay información almacenada
 //       Si hay datos, se imprimen en el HTML al refrescar la página

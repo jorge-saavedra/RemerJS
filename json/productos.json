@@ -1,0 +1,86 @@
+[
+  {
+    "id": 0,
+    "prenda": "remera",
+    "descripcion": "eastwood-inc-amarilla",
+    "precio": 2100,
+    "img": "./assets/img/eastwood-inc-amarilla-min.jpg"
+  },
+  {
+    "id": 1,
+    "prenda": "remera",
+    "descripcion": "i-wanna-be-blackandwhite",
+    "precio": 3390,
+    "img": "./assets/img/i-wanna-be-blackandwhite-min.jpg"
+  },
+  {
+    "id": 2,
+    "prenda": "remera",
+    "descripcion": "mockup-kit-azul-marino",
+    "precio": 4395,
+    "img": "./assets/img/mockup-kit-azul-marino-min.jpg"
+  },
+  {
+    "id": 3,
+    "prenda": "remera",
+    "descripcion": "opend-your-mind-blackandwhite",
+    "precio": 3485,
+    "img": "./assets/img/opend-your-mind-blackandwhite-min.jpg"
+  },
+  {
+    "id": 4,
+    "prenda": "remera",
+    "descripcion": "remeras-lisas",
+    "precio": 3390,
+    "img": "./assets/img/remeras-lisas-min.jpg"
+  },
+  {
+    "id": 5,
+    "prenda": "remera",
+    "descripcion": "short-scleeve-violeta",
+    "precio": 2185,
+    "img": "./assets/img/short-scleeve-violeta-min.jpg"
+  },
+  {
+    "id": 6,
+    "prenda": "remera",
+    "descripcion": "sunshine-white",
+    "precio": 2385,
+    "img": "./assets/img/sunshine-white-min.jpg"
+  },
+  {
+    "id": 7,
+    "prenda": "remera",
+    "descripcion": "tri-blen-crew-negra",
+    "precio": 5185,
+    "img": "./assets/img/tri-blen-crew-negra-min.jpg"
+  },
+  {
+    "id": 8,
+    "prenda": "pantalon",
+    "descripcion": "tri-crew-negra",
+    "precio": 8785,
+    "img": "./assets/img/pexels-prayoon-sajeev-2897521-min.jpg"
+  },
+  {
+    "id": 9,
+    "prenda": "pantalon",
+    "descripcion": "blen-crew-negra",
+    "precio": 7785,
+    "img": "./assets/img/pexels-ivan-samkov-5947545-min.jpg"
+  },
+  {
+    "id": 10,
+    "prenda": "pantalon",
+    "descripcion": "tri-blen-crew-blancl",
+    "precio": 9085,
+    "img": "./assets/img/pexels-godisable-jacob-3689127-min.jpg"
+  },
+  {
+    "id": 11,
+    "prenda": "pantalon",
+    "descripcion": "tri-blen-crew",
+    "precio": 6985,
+    "img": "./assets/img/pexels-ron-lach-10341113-min.jpg"
+  }
+]
